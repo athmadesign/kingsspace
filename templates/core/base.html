@@ -10,9 +10,9 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="Awaiken">
 	<!-- Page Title -->
-    <title>Inspaire - Architecture and Interior Design HTML Template</title>
+    <title>King Space LLC</title>
 	<!-- Favicon Icon -->
-	<link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.png' %}">
+	<link rel="shortcut icon" type="image/x-icon" href="{% static 'images/logo/logo_ks.png' %}">
 	<!-- Google Fonts Css-->
 	<link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -32,8 +32,10 @@
     {% include "partial/nav.html" %}
 
     {% block content %}
+    
     {% endblock content %}
 
+    {% include "partial/footer.html" %}
     <!-- JS Files -->
     <script src="{% static 'js/jquery-3.7.1.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>

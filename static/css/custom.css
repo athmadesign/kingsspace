@@ -39,10 +39,10 @@
 /************************************/	
 
 :root{
-	--primary-color			: #192324;
+	--primary-color			: #74512D;
 	--secondery-color		: #F8F8F8;
 	--text-color			: #283132;
-	--accent-color			: #7C877F;
+	--accent-color			: #FEBA17;
 	--white-color			: #FFFFFF;
 	--divider-color			: #EAF0EC;
 	--dark-divider-color	: #FFFFFF1A;
@@ -1226,7 +1226,8 @@ header.main-header .header-sticky.active .navbar{
     left: 0;
     bottom: 0;
     right: 0;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 105%);
+    background: linear-gradient(360deg, rgba(96, 77, 0, 0.6) 0%, rgba(255, 204, 0, 0) 105%);
+
     height: 100%;
     width: 100%;
     z-index: 1;
@@ -2166,10 +2167,10 @@ header.main-header .header-sticky.active .navbar{
     color: inherit;
 }
 
-.page-header-box ol .breadcrumb-item+.breadcrumb-item::before{
+/* .page-header-box ol .breadcrumb-item+.breadcrumb-item::before{
     font-size: 20px;
     color: var(--white-color);
-}
+} */
 
 .about-us.page-about-us{
 	background: transparent;
@@ -3920,9 +3921,9 @@ header.main-header .header-sticky.active .navbar{
 		font-size: 18px;
 	}
 
-	.page-header-box ol .breadcrumb-item+.breadcrumb-item::before{
+	/* .page-header-box ol .breadcrumb-item+.breadcrumb-item::before{
 		font-size: 16px;
-	}
+	} */
 
 	.about-facility-list{
 		margin-top: 50px;
