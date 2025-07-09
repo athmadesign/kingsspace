@@ -832,12 +832,11 @@ header.main-header .header-sticky.active .navbar{
 
 .about-us-images{
 	position: relative;
-	background-image: url(../images/about-us-bg-shape.svg);
 	background-repeat: no-repeat;
 	background-position: left 60px bottom 40px;
 	background-size: auto;
-	padding-right: 100px;
-	padding-bottom: 180px;
+	padding-right: 0px;
+	padding-bottom: 0px;
 	margin-right: 30px;
 }
 
@@ -943,23 +942,14 @@ header.main-header .header-sticky.active .navbar{
 	gap: 80px;
 }
 
-.about-us-content-body::before{
-	content: '';
-	position: absolute;
-	right: 50%;
-	top: 0;
-	bottom: 0;
-	transform: translateX(-50%);
-	border: 1px solid var(--divider-color);
-	width: 1px;
-	height: 100%;
-}
-
 .about-us-content-info{
 	width: calc(50% - 40px);
 }
 
 .about-us-content-list{
+	display: flex;
+	justify-content: space-between;
+	gap: 40px;
 	margin-bottom: 40px;
 }
 
@@ -2114,7 +2104,7 @@ header.main-header .header-sticky.active .navbar{
 
 .page-header{
 	position: relative;
-	background: url('../images/page-header-bg.jpg');
+	background: url('../images/hero/breadcrumb_img.webp');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -4325,7 +4315,7 @@ header.main-header .header-sticky.active .navbar{
 	.about-us-images{
 		background-position: left 10px bottom 10px;
 		background-size: 20% auto;
-		padding: 10px 45px 100px 0;
+		/* padding: 10px 45px 100px 0; */
 	}
 
 	.feedback-counter{

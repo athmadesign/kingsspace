@@ -8,8 +8,8 @@ def service(request):
     context = {'categories': categories}  
     return render(request, 'core/services.html', context)
 
-def service_detail(request, pk):
-    category = get_object_or_404(ServiceCategory, pk=pk)
+def service_detail(request, slug):
+    category = get_object_or_404(ServiceCategory, slug=slug)
     services = category.services.all()  # Uses the related_name in your model
     context = {
         'category': category,
