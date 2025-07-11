@@ -370,12 +370,12 @@ body{
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    background: url('../images/icon-sub-heading.svg');
+    background: url('../images/icons/arrow-icon.svg');
 	background-repeat: no-repeat;
 	background-position: left center;
 	background-size: cover;
-    width: 24px;
-    height: 5px;
+    width: 28px;
+    height: 28px;
 }
 
 .section-title h1{
