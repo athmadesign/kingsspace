@@ -8,12 +8,12 @@
 				<div class="col-lg-12">
 					<!-- Page Header Box Start -->
 					<div class="page-header-box">
-						<h1 class="text-anime-style-2" data-cursor="-opaque">{{ category.name }}</h1>
+						<h1 class="text-anime-style-2" data-cursor="-opaque">{{service.title}}</h1>
 						<nav class="wow fadeInUp">
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="{% url "home" %}">home /</a></li>
 								<li class="breadcrumb-item"><a href="{% url "services" %}">services /</a></li>
-								<li class="breadcrumb-item active" aria-current="page">{{ category.name }}</li>
+								<li class="breadcrumb-item active" aria-current="page">{{service.title}}</li>
 							</ol>
 						</nav>
 					</div>
@@ -32,18 +32,7 @@
                     <!-- Service Sidebar Start -->
                     <div class="service-sidebar">
                         <!-- Service Category List Start -->
-                        <div class="service-catagery-list wow fadeInUp">
-    <h3>services category</h3>
-    <ul>
-        {% if services %}
-            {% for service in services %}
-                <li><a href="{% url 'sub_service_detail' category.slug service.slug %}">{{ service.title }}</a></li>
-            {% endfor %}
-        {% else %}
-            <li><span>No services found in this category.</span></li>
-        {% endif %}
-    </ul>
-</div>
+                        
 
                         <!-- Service Category List End -->
 
@@ -105,8 +94,8 @@
                         <!-- Service Feature Image Start -->
                         <div class="service-feature-image">
     <figure class="image-anime reveal">
-        {% if category.thumbnail %}
-            <img src="{{ category.thumbnail.url }}" alt="{{ category.name }}">
+        {% if service.image %}
+            <img src="{{ service.image.url }}" alt="{{ service.name }}">
         {% endif %}
     </figure>
 </div>
@@ -114,7 +103,7 @@
 
                         <!-- Secvice Entry Start -->
                         <div class="service-entry">
-    <p class="wow fadeInUp">{{ category.description }}</p>
+    <p class="wow fadeInUp">{{ service.description }}</p>
 </div>
                         <!-- Secvice Entry End -->
 

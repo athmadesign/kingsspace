@@ -38,11 +38,11 @@
                      <div class="footer-links">
                         <h3>information</h3>
                         <ul>
-                            <li><a href="{% url "about" %}">about our company</a></li>
-                            <li><a href="{% url "services" %}">view our service</a></li>
+                            <li><a href="{% url "about" %}">about us</a></li>
+                            <li><a href="{% url "services" %}">our services</a></li>
                             <li><a href="#">careers at company</a></li>
-                            <li><a href="blog.html">read our blog</a></li>
-                            <li><a href="{% url "projects" %}">our latest projects</a></li>
+                            
+                            <li><a href="{% url "contact" %}">contact us</a></li>
                         </ul>
                      </div>
                     <!-- Footer Links End -->
@@ -51,14 +51,12 @@
                 <div class="col-lg-4 col-md-6">
                     <!-- Footer Links Start -->
                      <div class="footer-links">
-                        <h3>portfolio</h3>
+                        <h3>services</h3>
                         <ul>
-                            <li><a href="project-single.html">luxury home design</a></li>
-                            <li><a href="project-single.html">residential interior design</a></li>
-                            <li><a href="project-single.html">commercial space design</a></li>
-                            <li><a href="project-single.html">residential interior design</a></li>
-                            <li><a href="project-single.html">renovation and restoration design</a></li>
-                        </ul>
+        {% for category in footer_service_categories %}
+            <li><a href="{% url 'service_detail' category.slug %}">{{ category.name }}</a></li>
+        {% endfor %}
+    </ul>
                      </div>
                     <!-- Footer Links End -->
                 </div>
@@ -73,7 +71,7 @@
                                 <i class="fa-solid fa-phone"></i>
                             </div>
                             <div class="footer-contact-content">
-                                <p>+1 (213) 465 789</p>
+                                <p>(+971) 65 69 2177</p>
                             </div>
                         </div>
                         <!-- Footer Contact Item End -->
@@ -112,7 +110,7 @@
                     <div class="col-md-12">
                         <!-- Footer Copyright Start -->
                         <div class="footer-copyright-text">
-                            <p>Copyright © 2024 All Rights Reserved.</p>
+                            <p>Copyright © {% now "Y" %} All Rights Reserved.</p>
                         </div>
                         <!-- Footer Copyright End -->
                     </div>
